@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Birla Group</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(238, 10, 10, 0.7) !important;
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            z-index: 9999;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        header.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        header .logo img {
+            height: 50px;
+            margin-left: 3px;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        header nav ul li {
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        header .search-bar {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        header .search-bar input[type="text"] {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            outline: none;
+            font-size: 1rem;
+            width: 150px;
+        }
+
+        header .search-bar button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        header .search-bar button:hover {
+            background-color: #ffa500;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .force-for-good {
+            position: relative;
+            height: 100vh;
+            background: url('https://img-cdn.thepublive.com/fit-in/640x430/filters:format(webp)/newsdrum-in/media/media_files/sP0VGJBiQA3Pm0uRIVk5.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            header nav ul li {
+                margin: 0 5px;
+            }
+
+            header .search-bar input[type="text"] {
+                width: 120px;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul li {
+                margin: 5px 0;
+            }
+
+            header .search-bar {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            header .search-bar input[type="text"] {
+                width: 100px;
+            }
+
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-content h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<!-- this section is for the navbar and the animations of the images  -->
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://media.licdn.com/dms/image/v2/C4D0BAQGgHf2oEPKj1g/company-logo_200_200/company-logo_200_200/0/1630558705118/magellanic_cloud_logo?e=2147483647&v=beta&t=2nlttiXaG__qyrgLA00VJMnzRkqNqM18LM9M1wCwMmg"
+                alt="Magellanic-Cloud">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Businesses</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Sustainability</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero" id="hero">
+        <div class="hero-content" id="hero-content">
+            <h1 id="hero-heading">Magellanic Cloud | <b>MINING</b></h1>
+        </div>
+    </div>
+    <script>
+        const images = [
+            { src: './1473.jpg', text: "Magellanic Cloud | MINING" },
+            { src: './4238.jpg', text: "Magellanic Cloud | INNOVATION" },
+            { src: './49859.jpg', text: "Magellanic Cloud | SUSTAINABILITY" },
+            { src: './111766.jpg', text: "Magellanic Cloud | TECHNOLOGY" },
+            { src: './robot-with-final-piece-jigsaw-puzzle.jpg', text: "Magellanic Cloud | FUTURE" }
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            const hero = document.getElementById("hero");
+            const heroContent = document.getElementById("hero-content");
+            const heroHeading = document.getElementById("hero-heading");
+
+            // Fade out current content
+            heroContent.style.opacity = 0;
+
+            // Update background image and text
+            setTimeout(() => {
+                hero.style.backgroundImage = `url(${images[currentIndex].src})`;
+                heroHeading.innerHTML = images[currentIndex].text;
+                currentIndex = (currentIndex + 1) % images.length; // Cycle through the images
+
+                // Fade in new content
+                heroContent.style.opacity = 1;
+            }, 1000); // Wait 1 second for fade out transition
+
+        }
+
+        // Change background every 3 seconds
+        setInterval(changeBackground, 3000);
+
+        // Initial background change
+        changeBackground();
+    </script>
+</body>
+
+</html>
+
+<!-- this section is for the Timeline Cards  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Cards</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            --primary-color: rgba(30, 30, 30);
+            --background-color: rgba(245, 245, 245);
+            min-height: 100vh;
+            display: grid;
+            align-content: center;
+            gap: 2rem;
+            padding: 2rem;
+            font-family: "Poppins", sans-serif;
+            color: var(--primary-color);
+            background: var(--background-color);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Scrollable container */
+        .timeline-wrapper {
+            max-width: 100%;
+            /* Set width to 100% of the parent container */
+            overflow-x: auto;
+            /* Enable horizontal scrolling */
+            display: flex;
+            gap: 2rem;
+            /* Add some gap between the items */
+        }
+
+        .timeline {
+            display: flex;
+            /* Use flexbox for horizontal layout */
+            list-style: none;
+            margin-inline: 0;
+            justify-content: flex-start;
+            /* Align items to the left */
+            align-items: center;
+            /* Align items vertically centered */
+            gap: 2rem;
+            /* Add some gap between the cards */
+        }
+
+        /* card */
+        .timeline-item {
+            display: grid;
+            grid-template-rows: min-content min-content min-content;
+            padding: 1.5rem;
+            background: var(--background-color);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(50px);
+            /* Start position for animation */
+            transition: opacity 1s ease, transform 1s ease;
+            width: 250px;
+            /* Fixed width for uniformity */
+            height: 350px;
+            /* Fixed height for uniform shape */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* date */
+        .timeline-item .timeline-date {
+            height: 3rem;
+            text-align: center;
+            background-color: var(--accent-color);
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: grid;
+            place-content: center;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        /* date flap */
+        .timeline-item .timeline-date::before {
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background: var(--accent-color);
+            position: absolute;
+            top: 100%;
+            right: 0;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+
+        /* title and description */
+        .timeline-item .timeline-title,
+        .timeline-item .timeline-descr {
+            margin-top: 1rem;
+            padding: 0.5rem 0;
+        }
+
+        .timeline-item .timeline-title {
+            font-weight: 500;
+        }
+
+        .timeline-item .timeline-descr {
+            font-weight: 300;
+            flex-grow: 1;
+            /* Allow description to grow and take remaining space */
+        }
+
+        /* animation for cards */
+        @media (min-width: 40rem) {
+            .timeline-item {
+                width: 300px;
+                /* Slightly larger width for larger screens */
+            }
+        }
+
+        .credits {
+            margin-top: 1rem;
+            text-align: right;
+        }
+
+        .credits a {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>UL Timeline Cards</h1>
+
+    <!-- Scrollable Wrapper -->
+    <div class="timeline-wrapper">
+        <ul class="timeline">
+            <li class="timeline-item" style="--accent-color:#41516C">
+                <div class="timeline-date">2002</div>
+                <div class="timeline-title">Title 1</div>
+                <div class="timeline-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic
+                    quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+            </li>
+            <li class="timeline-item" style="--accent-color:#FBCA3E">
+                <div class="timeline-date">2007</div>
+                <div class="timeline-title">Title 2</div>
+                <div class="timeline-descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci
+                    nobis nostrum vero nihil veniam.</div>
+            </li>
+            <li class="timeline-item" style="--accent-color:#E24A68">
+                <div class="timeline-date">2012</div>
+                <div class="timeline-title">Title 3</div>
+                <div class="timeline-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima
+                    consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod
+                    reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
+            </li>
+            <li class="timeline-item" style="--accent-color:#1B5F8C">
+                <div class="timeline-date">2017</div>
+                <div class="timeline-title">Title 4</div>
+                <div class="timeline-descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.
+                </div>
+            </li>
+            <li class="timeline-item" style="--accent-color:#4CADAD">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-title">Title 5</div>
+                <div class="timeline-descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            // Apply the animation for each timeline item
+            timelineItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.opacity = 1;
+                    item.style.transform = 'translateY(0)';
+                }, index * 300); // Stagger the animation by 300ms for each item
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+<!-- this section is for the video and the Jio-stats (achivements)  -->
+
+<section class="jio-stats" data-aos="fade-left">
+    <div class="video-container">
+        <iframe width="960" height="515" src="./WhatsApp Video 2025-01-04 at 2.03.55 PM.mp4" title="Jio Stats Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="row" data-aos="fade-right">
+        <div class="col">
+            <div class="stat">
+                <span class="title">Ranked #1</span><br>
+                <span class="subtitle">India's strongest brand</span><br>
+            </div>
+            <div class="stat">
+                <span class="title">Data Traffic</span><br>
+                <span class="subtitle">148.5 bn GB</span><br>
+                <span class="subsubtitle">FY2023-24</span><br>
+            </div>
+        </div>
+        <div class="col">
+            <div class="stat">
+                <span class="title">Ranked #1</span><br>
+                <span class="subtitle">Connectivity and digital services provider in India</span><br>
+            </div>
+            <div class="stat">
+                <span class="title">Jio</span><br>
+                <span class="subtitle">~60%</span><br>
+                <span class="subsubtitle">Share of India's data traffic</span><br>
+            </div>
+        </div>
+        <div class="col">
+            <div class="stat">
+                <span class="title">Jio Subscribers</span><br>
+                <span class="subtitle">478.8 million</span><br>
+                <span class="subsubtitle">As of Q2 FY2024-25</span><br>
+            </div>
+            <div class="stat">
+                <span class="title">Jio Platforms Awarded</span><br>
+                <span class="subtitle">TIME 100</span><br>
+                <span class="subsubtitle">Most influential companies</span><br>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function () {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            // Scroll Down: Hide header
+            document.querySelector('header').classList.add('hidden');
+        } else {
+            // Scroll Up: Show header
+            document.querySelector('header').classList.remove('hidden');
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+</script>
+
+
+
+<style>
+    .jio-stats {
+        background: linear-gradient(180deg, #f4f5f6, #013a6b);
+        /* Blue background color */
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .video-container {
+        margin-bottom: 30px;
+        margin-left: 15%;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col {
+        width: calc(33.33% - 20px);
+        /* Adjust for margins */
+        margin-right: 20px;
+    }
+
+    .col:last-child {
+        margin-right: 0;
+        /* Remove margin from the last column */
+    }
+
+    .stat {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+        /* Increased font size for title */
+        font-weight: bold;
+        color: #fff;
+        /* White text color */
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        /* Increased font size for subtitle */
+        color: #fff;
+        /* White text color */
+        margin-bottom: 5px;
+    }
+
+    .subsubtitle {
+        font-size: 18px;
+        /* Increased font size for subsubtitle */
+        color: #fff;
+        /* White text color */
+    }
+
+    .hero {
+        margin-bottom: 0;
+        /* Remove bottom margin */
+    }
+
+    .jio-stats {
+        margin-top: 0;
+        /* Remove top margin */
+        padding: 20px;
+        /* Keep padding as needed for content */
+    }
+</style>
+
+<!-- this section is for the news cards and the businesses section  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        section {
+            background-color: #f7fafc;
+            padding: 2rem;
+        }
+
+        .news-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 16rem;
+            object-fit: cover;
+        }
+
+        .news-card-content {
+            padding: 1.5rem;
+        }
+
+        .news-card .title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-top: 0.5rem;
+        }
+
+        .news-card .text {
+            color: #718096;
+            margin-top: 0.5rem;
+        }
+
+        .fact-card {
+            background-color: #ebf8ff;
+            padding: 1.5rem;
+        }
+
+        .fact-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-top: 0.5rem;
+        }
+
+        .fact-card .text {
+            color: #718096;
+            margin-top: 0.5rem;
+        }
+
+        .fact-card .italic-text {
+            color: #3182ce;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        .social-card {
+            border-radius: 8px;
+            padding: 1.5rem;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .social-card p {
+            margin-top: 1rem;
+        }
+
+        .social-card .icons {
+            position: absolute;
+            top: 1rem;
+        }
+
+        .social-card .icon-left {
+            left: 1rem;
+        }
+
+        .social-card .icon-right {
+            right: 1rem;
+        }
+
+        .social-card .bottom-right {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+        }
+
+        .gradient-blue {
+            background: linear-gradient(to right, #2b6cb0, #3182ce);
+        }
+
+        .gradient-orange {
+            background: linear-gradient(to right, #f6ad55, #f687b3);
+        }
+
+        h6 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="max-w-4xl mx-auto" data-aos="fade-left">
+            <div class="flex justify-between mb-6">
+                <h2 class="text-2xl font-bold text-gray-800" style="color: #013a6b; font-size: 50px;"><b>In the
+                        News</b></h2>
+            </div>
+            <div>
+                <h6>xyz</h6>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="news-card">
+                    <img src="./111766.jpg" alt="Airplane flying over a desert">
+                    <div class="news-card-content">
+                        <span class="text-sm text-blue-600 font-semibold">PRESS RELEASE</span>
+                        <h3 class="title">Tata Advanced Systems and Airbus inaugurate C295 Final Assembly Line</h3>
+                        <p class="text">This is the first instance of the private sector setting up an aircraft FAL
+                            in India</p>
+                    </div>
+                </div>
+                <div class="news-card fact-card">
+                    <div class="news-card-content">
+                        <span class="text-sm text-blue-600 font-semibold">FACTS</span>
+                        <h3 class="title">Did you know</h3>
+                        <p class="text">Tata Motors created history by giving India its first indigenously designed,
+                            developed and manufactured car, the Indica, in 1998.</p>
+                        <p class="italic-text">Of India, By India, For India</p>
+                        <div class="text-right mt-4">
+                            <i class="fas fa-sync-alt text-gray-500"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card social-card gradient-blue">
+                    <div class="icons icon-left">
+                        <i class="fab fa-facebook-f text-3xl"></i>
+                    </div>
+                    <p class="mt-16">
+                        From becoming a pilot to a scientist, from a designer to an engineer, from building race
+                        cars, to constructing the
+                        tallest building, we have seen it all come true at Tata. #ThisIsTata #ChildrensDay
+                    </p>
+                    <p class="mt-4">4 days ago</p>
+                    <div class="bottom-right">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                </div>
+                <div class="news-card social-card gradient-orange">
+                    <div class="icons icon-left">
+                        <i class="fab fa-instagram text-3xl"></i>
+                    </div>
+                    <p class="mt-16">
+                        Leave the Monday Blues in the rearview mirror: it’s easier than ever when you're behind the
+                        wheel of India’s first SUV Coupé, the Curvv.ev! #ThisIsTata #TataMotors #TataCurvv
+                        #TataCurvvEV
+                    </p>
+                    <p class="mt-4">2 hours ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<section class="container" data-aos="fade-up">
+    <section class="businesses-section">
+        <h2><b>Businesses</b></h2>
+        <p>With over seven decades of responsible business practices, our businesses have grown into global
+            powerhouses in a wide range of sectors from metals to cement, fashion to financial services and textiles
+            to trading.</p>
+        <main>
+            <div class="grid-container">
+                <!-- Technology -->
+                <a href="tcs.html" class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTye1EN6Y8czd4iHALi3_Qj6XJA-BoN1CF-vQ&s"
+                        alt="Tata Consultancy Services">
+                    <div class="overlay">
+                        <h2>Information Technology</h2>
+                        <h3>Motivity Labs</h3>
+                        <p>TCS is a global leader in IT, digital, and business services.</p>
+                        <p class="stock">NSE 4099.9 <span class="down">( -1.32% ▼ )</span> | BSE 4099.25 <span
+                                class="down">( -2.02% ▼ )</span></p>
+                    </div>
+                </a>
+                <!-- Steel -->
+                <a href="tata-steel.html" class="grid-item">
+                    <img src="https://media.licdn.com/dms/image/v2/C4D0BAQFD9Iin-qJM1g/company-logo_200_200/company-logo_200_200/0/1655786591271?e=2147483647&v=beta&t=PQS4OPQDI2NYCbyryP43TpsGfn3DNRqdTEy3scomzas"
+                        alt="Tata Steel">
+                    <div class="overlay">
+                        <h2>Drone Manufacturing</h2>
+                        <h3>Scandron</h3>
+                        <p>Tata Steel is a leading global steel company with a production capacity of 33MnTPA.</p>
+                        <p class="stock">NSE 138.36 <span class="up">( 0.13% ▲ )</span> | BSE 138.3 <span class="up">(
+                                0.11% ▲ )</span></p>
+                    </div>
+                </a>
+                <!-- Auto -->
+                <a href="tata-motors.html" class="grid-item">
+                    <img src="https://media.licdn.com/dms/image/v2/D560BAQF6wbtRrEsOMg/company-logo_200_200/company-logo_200_200/0/1731043442124/ivis_international_pvt_ltdcompany_logo?e=2147483647&v=beta&t=j4Bv4s0KcORv1gqJYIIuikBsQDA3Yae0BQsg2Nv8n3I"
+                        alt="Tata Motors">
+                    <div class="overlay">
+                        <h2>E-surveillance</h2>
+                        <h3>iVIS</h3>
+                        <p>Tata Motors offers a diverse portfolio of smarter, integrated, and safer mobility
+                            solutions.</p>
+                        <p class="stock">NSE 790.4 <span class="up">( 3.31% ▲ )</span> | BSE 790.4 <span class="up">(
+                                3.33% ▲ )</span></p>
+                    </div>
+                </a>
+                <!-- Consumer and Retail -->
+                <a href="tata-consumer.html" class="grid-item">
+                    <img src="./Screenshot 2025-01-04 at 8.41.12 PM.png" alt="Tata Consumer Products">
+                    <div class="overlay">
+                        <h2>VMS and Video Analytics</h2>
+                        <h3>Scanalitix</h3>
+                        <p>Tata Consumer Products is a focused consumer products company uniting the food and
+                            beverage sectors.</p>
+                        <p class="stock">NSE 928.45 <span class="up">( 1.05% ▲ )</span> | BSE 938.4 <span class="up">(
+                                0.98% ▲ )</span></p>
+                    </div>
+                </a>
+                <!-- Infrastructure -->
+                <a href="tata-power.html" class="grid-item">
+                    <img src="https://media.licdn.com/dms/image/v2/C4D0BAQGgHf2oEPKj1g/company-logo_200_200/company-logo_200_200/0/1630558705118/magellanic_cloud_logo?e=2147483647&v=beta&t=2nlttiXaG__qyrgLA00VJMnzRkqNqM18LM9M1wCwMmg"
+                        alt="Tata Power">
+                    <div class="overlay">
+                        <h2>Staffing - India</h2>
+                        <h3>Magellanic Cloud</h3>
+                        <p>Tata Power is India's largest integrated power company.</p>
+                        <p class="stock">NSE 396.65 <span class="up">( 0.29% ▲ )</span> | BSE 396.65 <span class="up">(
+                                0.18% ▲ )</span></p>
+                    </div>
+                </a>
+                <!-- Tourism and Travel -->
+                <a href="indian-hotels.html" class="grid-item">
+                    <img src="https://media.licdn.com/dms/image/v2/D560BAQFvVqW2N9PZBw/company-logo_200_200/company-logo_200_200/0/1731410453646/jnit_technologies_logo?e=2147483647&v=beta&t=uEHfeuxFF47DTXuschjlT4PavthULeWqzR23w-GTXas"
+                        alt="Indian Hotels">
+                    <div class="overlay">
+                        <h2>Staffing - ROW</h2>
+                        <h3>JNIT Inc.</h3>
+                        <p>IHCL and its subsidiaries bring together brands and businesses offering a fusion of warm
+                            Indian hospitality.</p>
+                        <p class="stock">NSE 872.45 <span class="down">( -0.8% ▼ )</span> | BSE 871.9 <span
+                                class="down">( -0.81% ▼ )</span></p>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </section>
+</section>
+<style>
+    .container {
+        margin-top: 100px;
+        max-width: 1560px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: bisque;
+    }
+
+    .businesses-section {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .businesses-section h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        margin-right: 50%;
+        color: #013a6b;
+    }
+
+    .businesses-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #555;
+        margin-left: 13%;
+        margin-right: 10%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        text-align: center;
+        background-color: #222;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .container {
+        margin-top: 100px;
+        max-width: 1560px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(196, 35, 35);
+    }
+
+    .businesses-section {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .businesses-section h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        margin-right: 50%;
+        color: #013a6b;
+    }
+
+    .businesses-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #b46e6e;
+        margin-left: 13%;
+        margin-right: 10%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #faf4f4;
+    }
+
+    header {
+        text-align: center;
+        background-color: #222;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        /* Updated grid layout */
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .grid-item {
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+        /* Increased height to better fit the content */
+        text-decoration: none;
+        color: #fff;
+        border-radius: 10px;
+        display: flex;
+        /* Ensure the content inside is flexible */
+        flex-direction: column;
+        /* Stack the content vertically */
+        justify-content: space-between;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .grid-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .grid-item .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Ensure text spacing is correct */
+        text-align: left;
+    }
+
+    .grid-item h2 {
+        font-size: 18px;
+        /* Adjusted font size for readability */
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: #ffcc00;
+    }
+
+    .grid-item h3 {
+        font-size: 22px;
+        /* Adjusted for readability */
+        margin: 0;
+    }
+
+    .grid-item p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .grid-item .stock {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .grid-item .stock span.up {
+        color: green;
+    }
+
+    .grid-item .stock span.down {
+        color: red;
+    }
+</style>
+
+<!-- this section is for the footer  -->
+
+<footer>
+
+    <!-- Join Our Team section -->
+    <section>
+        <html>
+
+        <head>
+            <title>Join Our Team</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <style>
+                body {
+                    font-family: 'Roboto', sans-serif;
+                }
+            </style>
+        </head>
+
+        <body class="bg-white">
+
+            <!-- Top Image Section -->
+            <div class="flex justify-center bg-gray-200">
+                <!-- Placeholder images for employees -->
+                <img src="https://placehold.co/150x150" alt="Employee 1" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 2" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 3" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 4" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 5" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 6" class="w-20 h-20 object-cover m-2">
+            </div>
+
+            <!-- Main Content Section -->
+            <div class="flex justify-between items-center bg-gray-100 p-10">
+                <div class="w-1/2">
+                    <h1 class="text-4xl font-bold text-red-600">Join Our Team</h1>
+                    <p class="text-lg mt-4">Discover your next chapter with us. Explore a rewarding career with Aditya
+                        Birla Group that aligns with your purpose, passion and potential.</p>
+                    <a href="#" class="mt-4 inline-flex items-center text-red-600 hover:underline">
+                        <span>Explore Now</span> <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <div class="w-1/2">
+                    <ul class="space-y-4 text-right">
+                        <li>
+                            <a href="#" class="text-red-600 hover:underline flex justify-end items-center">
+                                <span>Careers By Business</span> <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-red-600 hover:underline flex justify-end items-center">
+                                <span>Careers By Function</span> <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-red-600 hover:underline flex justify-end items-center">
+                                <span>Upload Resume</span> <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-red-600 hover:underline flex justify-end items-center">
+                                <span>Aditya Birla Group Leadership Programs</span> <i
+                                    class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-red-600 hover:underline flex justify-end items-center">
+                                <span>Global Manufacturing Leadership Program</span> <i
+                                    class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Image Section -->
+            <div class="flex justify-center bg-gray-200">
+                <!-- Placeholder images for employees -->
+                <img src="https://placehold.co/150x150" alt="Employee 7" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 8" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 9" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 10" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 11" class="w-20 h-20 object-cover m-2">
+                <img src="https://placehold.co/150x150" alt="Employee 12" class="w-20 h-20 object-cover m-2">
+            </div>
+
+        </body>
+
+        </html>
+    </section>
+
+    <p>Magellanic Cloud</p>
+</footer>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200, // Animation duration in milliseconds
+        easing: 'ease-in-out', // Animation easing
+        once: true, // Whether animation should happen only once
+    });
+</script>
+
+</html>
